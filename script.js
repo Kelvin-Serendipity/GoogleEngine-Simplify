@@ -142,7 +142,7 @@ BingBarInput.addEventListener('focus', function () {
 
 //bing 和 bing-bar-input的组合动态效果
 Input.addEventListener('blur', function () {
-  Input.style.transition = 'border-radius 0.5s ease'
+  Input.style.transition = 'border-radius 1s ease'
   Input.style.borderRadius = '25px' // 恢复到失去焦点时的样式
 });
 

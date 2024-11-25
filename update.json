@@ -2,18 +2,20 @@
   {
     "version": "v1.0.0",
     "Date": "更新日期：2024-09-18",
-<<<<<<< HEAD
-    "update1": "Google-Simplify 网站正式上线"
-=======
-    "update1": "修复已知Bug",
-    "update2": "UI界面进一步优化",
-    "update3": "增加历史记录下拉框的历史记录删除按钮"
+    "update1": "Google-Simplify 网站正式上线",
+    "update2": "修复已知Bug",
+    "update3": "UI界面进一步优化",
+    "update4": "增加历史记录下拉框的历史记录删除按钮"
   },
   {
     "version": "v1.2.2",
     "Date": "更新日期：2024-09-18",
     "update1": "UI界面优化",
     "update2":  "适配了移动端设备（手机）"
->>>>>>> be0d460d55dd5dbcbe17667f19ceacc9be341949
+  },
+  {
+    "version": "v1.2.3",
+    "Date": "更新日期：2024-10-09",
+    "update1": "更新了最新镜像地址，保证网站可正常使用"
   }
 ]

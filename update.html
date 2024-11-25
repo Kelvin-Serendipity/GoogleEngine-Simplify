@@ -14,23 +14,15 @@
       height: 46px;
       width: 842px;
       margin: auto;
-<<<<<<< HEAD
       background-color: #f4f4f4;
-=======
-      background-color: #eaeaea;
->>>>>>> be0d460d55dd5dbcbe17667f19ceacc9be341949
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
     .logo {
-<<<<<<< HEAD
       height: 30px;
       width: 87px;
-=======
-      height: 25px;
->>>>>>> be0d460d55dd5dbcbe17667f19ceacc9be341949
       margin-top: 10px;
     }
 
@@ -80,18 +72,13 @@
         height: 46px;
         width: 270px;
         margin: auto;
-<<<<<<< HEAD
         background-color: #f4f4f4;
-=======
-        background-color: #eaeaea;
->>>>>>> be0d460d55dd5dbcbe17667f19ceacc9be341949
         display: flex;
         align-items: center;
         justify-content: center;
       }
 
       .subject-text {
-<<<<<<< HEAD
         width: 70%;
         margin: 20px auto 0 auto;
         border-radius: 10px;
@@ -104,15 +91,6 @@
         text-align: center;
       }
     }
-=======
-      width: 70%;
-      margin: 50px auto 0 auto;
-      border-radius: 10px;
-      background-color: #eaeaea;
-      padding: 20px 20px;
-    }
-  }
->>>>>>> be0d460d55dd5dbcbe17667f19ceacc9be341949
   </style>
 </head>
 
@@ -121,11 +99,7 @@
     <div class="logo-containe">
       <h1 id="h1">
         <a href="./index.html">
-<<<<<<< HEAD
           <img src="./image/google.png" alt="" class="logo">
-=======
-          <img src="./image/bing.png" alt="" class="logo">
->>>>>>> be0d460d55dd5dbcbe17667f19ceacc9be341949
         </a>
       </h1>
     </div>
@@ -133,48 +107,40 @@
   <div class="subject-p">
     <b class="s-p-b">更新日志</b>
   </div>
-  <!-- <div class="subject-text">
-    <h2 class="s-t-b">v1.2.1</h2>
-    <p class="s-t-p">2024-x-x</p>
-    <ul class="s-t-ul">
-        <li class="s-t-u-li">修复了一些错误</li>
-        <li class="s-t-u-li">修复了一些错误</li>
-    </ul>
-  </div> -->
   <script>
     fetch('./update.json')
       .then(response => response.json())
       .then(updateArr => {
         for (let i = 0; i < updateArr.length; i++) {
-          const updateItem = updateArr[(updateArr.length - i) - 1]
-          const div = document.createElement('div')
-          div.classList.add('subject-text')
+          const updateItem = updateArr[(updateArr.length - i) - 1];
+          const div = document.createElement('div');
+          div.classList.add('subject-text');
 
-          const versionHeader = document.createElement('h2')
-          versionHeader.classList.add('s-t-b')
-          versionHeader.innerText = updateItem.version
-          div.appendChild(versionHeader)
+          const versionHeader = document.createElement('h2');
+          versionHeader.classList.add('s-t-b');
+          versionHeader.innerText = updateItem.version;
+          div.appendChild(versionHeader);
 
-          const dateParagraph = document.createElement('p')
-          dateParagraph.classList.add('s-t-p')
-          dateParagraph.innerHTML = updateItem.Date
-          div.appendChild(dateParagraph)
+          const dateParagraph = document.createElement('p');
+          dateParagraph.classList.add('s-t-p');
+          dateParagraph.innerHTML = updateItem.Date;
+          div.appendChild(dateParagraph);
 
-          const ul = document.createElement('ul')
-          ul.classList.add('s-t-ul')
+          const ul = document.createElement('ul');
+          ul.classList.add('s-t-ul');
 
           for (let key in updateItem) {
             if (key.startsWith('update')) {
-              const li = document.createElement('li')
-              li.classList.add('s-t-u-li')
-              li.innerHTML = updateItem[key]
-              ul.appendChild(li)
+              const li = document.createElement('li');
+              li.classList.add('s-t-u-li');
+              li.innerHTML = updateItem[key];
+              ul.appendChild(li);
             }
           }
-          div.appendChild(ul)
-          document.body.appendChild(div)
+          div.appendChild(ul);
+          document.body.appendChild(div);
         }
-      })
+      });
   </script>
 </body>
 
