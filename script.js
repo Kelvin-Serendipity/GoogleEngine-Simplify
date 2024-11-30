@@ -79,11 +79,12 @@ function ShowHistory() {
 
     HistoryContainer.appendChild(div)
 
+    const form = document.querySelector('#bing-search-form')
     div.onclick = () => {
       Input.value = item
       HistoryContainer.style.display = 'none'
       Input.style.borderRadius = '25px'
-
+      form.submit()
     }
 
     deleteIcon.onclick = (e) => {
